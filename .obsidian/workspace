@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Linux/git/Git server.md",
-            "mode": "source",
+            "file": "Networking/Network Troubleshooting.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/git/Git server.md",
+                "file": "Networking/Network Troubleshooting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/git/Git server.md",
+                "file": "Networking/Network Troubleshooting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/git/Git server.md"
+                "file": "Networking/Network Troubleshooting.md"
               }
             }
           }
@@ -130,12 +130,12 @@
   },
   "active": "2063af72574753c0",
   "lastOpenFiles": [
+    "Linux/git/Git server.md",
     "Networking/Subnet cheet sheet.md",
     "Windows/Hardware/Disk.md",
     "Windows/Updates.md",
     "Troubleshooting.md",
     "Linux/zfs/ZFS.md",
-    "Linux/git/Git server.md",
     "Networking/SSHCertsConfig.md",
     "Linux/Ubuntu Static IP.md",
     "Linux/Hardening.md",
