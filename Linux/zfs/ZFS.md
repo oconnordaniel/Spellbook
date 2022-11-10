@@ -13,7 +13,7 @@ Wipe disks to be used
 `w write`
 
 Create ZFS Pool
-`zpool create [Pool Name] -m /mnt/[mount point] /dev/sdX`
+`zpool create [Pool Name] -m /mnt/[mount point] /dev/sdX -o ashift=12 `
 
 Create ZFS File system
 `zfs create [Pool Name]/[FS Name] -o compression=on -o encryption=on -o keylocation=prompt -o keyformat=passphrase`
@@ -36,18 +36,8 @@ Restore file
 `ls`
 
 ```
-zfs set com.sun:auto-snapshot:monthly=true Pool/FS
-zfs set com.sun:auto-snapshot:weekly=true Pool/FS
-zfs set com.sun:auto-snapshot:daily=true Pool/FS
-zfs set com.sun:auto-snapshot:hourly=true Pool/FS
-zfs set com.sun:auto-snapshot:frequent=true Pool/FS
-```
-```
-sudo zfs set com.sun:auto-snapshot:monthly=false Storage && \
-sudo zfs set com.sun:auto-snapshot:weekly=false Storage && \
-sudo zfs set com.sun:auto-snapshot:daily=false Storage && \
-sudo zfs set com.sun:auto-snapshot:hourly=false Storage && \
-sudo zfs set com.sun:auto-snapshot:frequent=false Storage 
+zfs snapshot and zfs replication is handled by sanoid
+configs are in ansible IaC
 ```
 
 `ssh [remote ip] zfs send -vi Path/to/Dataset | zfs receive BackupFS/BackupLocation`
