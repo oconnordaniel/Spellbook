@@ -11,6 +11,9 @@ To view the permissions of the calendar
 To add access to the calendar
 `Add-MailboxFolderPermission -Identity user1@domain.com:\calendar -user user2@domain.com -AccessRights Reviewer`
 
+After this user will still need to go to Outlook > Calendar > Add > Open Shared Callendar... and enter ther name of the mailbox.
+
+
 ## Outlook Calendar Roles and Permissions
 
 When managing calendar and Outlook folder permissions, you can use the following predefined permissions level roles:
