@@ -12,6 +12,11 @@ ping target by ip
 ping target by name
 establish session
 
+Routing table entries fall into four general categories:
+    Direct network routes, for subnets to which the router is directly attached.
+    Remote network routes, for subnets and IP networks that are not directly attached.
+    Host routes, for routes to a specific IP address. A host route has a /32 network prefix.
+    Default routes, which are used when an exact match for a network or host route is not found. 
 
 
 
