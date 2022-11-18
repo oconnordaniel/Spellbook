@@ -7,5 +7,6 @@
 pwsh -Command 'Install-Module -Name PSWSMan'
 sudo pwsh -Command 'Install-WSMan'
 
+Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline
 ```
