@@ -1,2 +1,3 @@
-
-`defaults write com.apple.Finder AppleShowAllFiles true`
+``` bash
+defaults write com.apple.Finder AppleShowAllFiles true
+```
