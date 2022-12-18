@@ -1,6 +1,6 @@
 ## Apt
-`apt update
-`apt upgrade
-`apt auto-remove
-
-
+``` sh
+apt update
+apt upgrade
+apt auto-remove
+```
