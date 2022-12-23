@@ -10,4 +10,4 @@ Erase:
 ctrl-U Start of line
 ctrl-W start of word
 crtl-D end of word
-ctrl-K end of line`
+ctrl-K end of line
