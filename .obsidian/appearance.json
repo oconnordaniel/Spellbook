@@ -1,4 +1,5 @@
 {
   "interfaceFontFamily": "Source Code Pro",
-  "accentColor": ""
+  "accentColor": "#0078d4",
+  "baseFontSize": 14
 }
