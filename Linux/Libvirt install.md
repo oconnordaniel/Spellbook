@@ -17,7 +17,6 @@ sudo usermod -aG libvirt dan
 
 # add kvm group to images folders
 ls -l /var/lib/libvirt 
-ls -l /var/lib/libvirt 
 sudo chown :kvm /var/lib/libvirt/images
 sudo chmod g+rwx /var/lib/libvirt/images
 ```
