@@ -54,6 +54,12 @@ Cron Scrub
 Cron Snapshots
 `0 0 * * * /usr/sbin/zfs snapshot [pool]/[FS]@snapshot-$(date '+%Y-%m-%d')`
 
+ZFS permissions: 
+
+`zfs allow [permission],[permission] [user]`
+[Docs](https://docs.oracle.com/cd/E19253-01/819-5461/gfkco/index.html)
+
+
 
 ## Links
 Installing ZFS on ubuntu: 
@@ -67,3 +73,5 @@ Encryption:
 https://arstechnica.com/gadgets/2021/06/a-quick-start-guide-to-openzfs-native-encryption/
 Snapshots:
 https://www.thegeeksearch.com/beginners-guide-to-zfs-snapshots/
+Replication: 
+[Klara - Introduction to ZFS Replication ](https://klarasystems.com/articles/introduction-to-zfs-replication/)
