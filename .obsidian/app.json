@@ -3,5 +3,6 @@
   "useTab": false,
   "tabSize": 4,
   "vimMode": true,
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "Hardware"
 }
