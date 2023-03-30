@@ -17,7 +17,8 @@ Create ZFS Pool
 
 
 zpool create Storage -m /mnt/Storage /dev/disk/by-id/wwn-0x50014ee212382cb5  /dev/disk/by-id/wwn-0x50014ee2bf13a501 -o ashift=12 
-
+ wwn-0x50014ee2bf13a501
+ wwn-0x50014ee212382cb5
 
 Create ZFS File system
 `zfs create [Pool Name]/[FS Name] -o compression=on -o encryption=on -o keylocation=prompt -o keyformat=passphrase`

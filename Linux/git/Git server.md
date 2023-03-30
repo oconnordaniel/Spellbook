@@ -49,3 +49,5 @@ $ cd project
 $ git commit -am 'Fix for README file'
 $ git push origin master
 ```
+
+git remote set-url origin dan@dans-git.lan:/git/
