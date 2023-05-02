@@ -1,4 +1,41 @@
-install tools [[Libvirt install]]
+
+# Setup Hypervisor
+
+## Check for viraul cores availible 
+``` bash
+egrep -c '(vmx|svm)' /proc/cpuinfo 
+```
+
+## Install packages 
+
+Ubuntu
+
+``` bash
+sudo apt install bridge-utils libvirt-clients libvirt-daemon-system qemu-kvm -y 
+```
+
+Fedora
+
+``` bash
+sudo dnf install libvirt qemu-kvm virt-install libguestfs-tools libguestfs-tools-c -y
+```
+
+### Check for kvm and libvirt groups. Add dan to groups
+
+``` bash
+cat /etc/group | grep kvm 
+cat /etc/group | grep libvirt
+sudo usermod -aG kvm dan
+sudo usermod -aG libvirt dan
+```
+
+### Add kvm group to images folders
+
+``` bash
+ls -l /var/lib/libvirt 
+sudo chown :kvm /var/lib/libvirt/images
+sudo chmod g+rwx /var/lib/libvirt/images
+```
 
 ## Netplan (ubuntu)
 
