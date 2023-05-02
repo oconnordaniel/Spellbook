@@ -1,3 +1,5 @@
+# Overview
+
 [White paper](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
 
 ## Pillars
@@ -8,11 +10,11 @@
 - **[[Performance]]** - Use resources effectively
 - **[[Cost]]** - Get the lowest price
 
-## General Design Principles 
+## General Design Principles
 
 - Don't guess costs
 - Easy test systems and prod. scale
 - Automate to make architectural changes and tests easier
 - Allow for evolution - CI/CD, Rapid releases, deprecating functions
 - Data driven architecture
-- Improve though game day - simulated disaster 
+- Improve though game day - simulated disaster

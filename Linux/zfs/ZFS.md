@@ -1,6 +1,6 @@
 # Set up ZFS pool with encryption and compression
 
-Update packages and install ZFS utils 
+Update packages and install ZFS utils
 `apt update && apt upgrade`  
 `apt install zfsutils-linux zfs-auto-snapshot`
 Build from source
@@ -13,10 +13,9 @@ Wipe disks to be used
 `w write`
 
 Create ZFS Pool
-`zpool create [Pool Name] -m /mnt/[mount point] /dev/sdX -o ashift=12 `
+`zpool create [Pool Name] -m /mnt/[mount point] /dev/sdX -o ashift=12`
 
-
-zpool create Storage -m /mnt/Storage /dev/disk/by-id/wwn-0x50014ee212382cb5  /dev/disk/by-id/wwn-0x50014ee2bf13a501 -o ashift=12 
+zpool create Storage -m /mnt/Storage /dev/disk/by-id/wwn-0x50014ee212382cb5  /dev/disk/by-id/wwn-0x50014ee2bf13a501 -o ashift=12
  wwn-0x50014ee2bf13a501
  wwn-0x50014ee212382cb5
 
@@ -26,7 +25,6 @@ Create ZFS File system
 To mount encrpted
 `zfs load-key -r [pool]/[fs]`
 `zfs mount -a`
-
 
 Snapshots
 Ceate
@@ -40,16 +38,15 @@ Restore file
 `cd [snapshot name]`
 `ls`
 
-```
+``` bash
 zfs snapshot and zfs replication is handled by sanoid
 configs are in ansible IaC
-```
 
-`ssh [remote ip] zfs send -vi Path/to/Dataset | zfs receive BackupFS/BackupLocation`
-`/bin/ssh [remote ip] /sbin/zsh send -vi Path/to/Dataset@snapshot | /bin/zfs receive BackupFS/BackupLocation`
+ssh [remote ip] zfs send -vi Path/to/Dataset | zfs receive BackupFS/BackupLocation
+/bin/ssh [remote ip] /sbin/zsh send -vi Path/to/Dataset@snapshot | /bin/zfs receive BackupFS/BackupLocation
 
 /sbin/zfs send -vi Storage/StorageFS@zfs-auto-snap_daily-$(date -d "yesterday" '+%Y-%m-%d')-1225 Storage/StorageFS@zfs-auto-snap_daily-$(date '+%Y-%m-%d')-1225 | /sbin/zfs receive Backup/BackupFS
-
+```
 
 Scrub
 `zpool scrub [Pool Name]`
@@ -59,24 +56,23 @@ Cron Scrub
 Cron Snapshots
 `0 0 * * * /usr/sbin/zfs snapshot [pool]/[FS]@snapshot-$(date '+%Y-%m-%d')`
 
-ZFS permissions: 
+ZFS permissions:
 
 `zfs allow [permission],[permission] [user]`
 [Docs](https://docs.oracle.com/cd/E19253-01/819-5461/gfkco/index.html)
 
-
-
 ## Links
-Installing ZFS on ubuntu: 
-https://ubuntu.com/tutorials/setup-zfs-storage-pool#3-creating-a-zfs-pool
-https://openzfs.github.io/openzfs-docs/Getting%20Started/Ubuntu/index.html
-Importing: 
-https://docs.oracle.com/cd/E19253-01/819-5461/gazuf/index.html
+
+Installing ZFS on ubuntu:
+<https://ubuntu.com/tutorials/setup-zfs-storage-pool#3-creating-a-zfs-pool>
+<https://openzfs.github.io/openzfs-docs/Getting%20Started/Ubuntu/index.html>
+Importing:
+<https://docs.oracle.com/cd/E19253-01/819-5461/gazuf/index.html>
 Compression:
-https://linuxhint.com/enable-zfs-compression/
-Encryption: 
-https://arstechnica.com/gadgets/2021/06/a-quick-start-guide-to-openzfs-native-encryption/
+<https://linuxhint.com/enable-zfs-compression/>
+Encryption:
+<https://arstechnica.com/gadgets/2021/06/a-quick-start-guide-to-openzfs-native-encryption/>
 Snapshots:
-https://www.thegeeksearch.com/beginners-guide-to-zfs-snapshots/
-Replication: 
-[Klara - Introduction to ZFS Replication ](https://klarasystems.com/articles/introduction-to-zfs-replication/)
+<https://www.thegeeksearch.com/beginners-guide-to-zfs-snapshots/>
+Replication:
+[Klara - Introduction to ZFS Replication](https://klarasystems.com/articles/introduction-to-zfs-replication/)
