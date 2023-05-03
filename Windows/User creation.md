@@ -1,3 +1,5 @@
+# User creation
+
 ``` cmd
 net user <username> <passwd> /add
 net localgroup administrators <username> /add

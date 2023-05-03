@@ -41,10 +41,13 @@ Stop-Service -name "wuauserv"
 Stop-Service -name "cryptSvc"
 Stop-Service -name "bits"
 Stop-Service -name "msiserver"
+>>>>>>> a09d74fc5814b157389d6ae9ac3e7e6d06edff49
 
 Rename-Item "C:\Windows\SoftwareDistribution SoftwareDistribution.old"
 Rename-Item "C:\Windows\System32\catroot2 Catroot2.old"
 
+<<<<<<< HEAD
+=======
 Start-Service -name "wuauserv"
 Start-Service -name "cryptSvc"
 Start-Service -name "bits"
