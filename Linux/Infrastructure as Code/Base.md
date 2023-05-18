@@ -64,3 +64,74 @@ sudo apt update
 sudo apt install python3 python3-pip
 python3 -m pip install --user ansible
 ```
+
+or 
+
+``` bash
+sudo apt install ansible
+```
+
+## Create SSH key for jenkins user
+
+``` bash 
+# may need to set password for Jenkins fist
+sudo passwd jenkins
+su - jenkins 
+
+ssh-keygen -t ed25519 -C jenkins-key -f /var/lib/jenkins/.ssh/id_ed25519
+```
+
+## Create API based access 
+
+## Create Terraform files
+
+```bash
+mkdir -p  /jenkins/jobs
+chown jenkins:jenkins -R /jenkins 
+
+mkdir /jenkins/jobs/project
+touch project.tf
+touch
+touch
+```
+
+prox_project.tf
+
+<https://registry.terraform.io/providers/Telmate/proxmox/latest/docs>
+
+``` json
+
+terraform {
+  required_providers {
+    proxmox = {
+      source  = "telmate/proxmox"
+      version = "2.9.14"
+    }
+  }
+}
+
+provider "proxmox" {
+  pm_api_url = "https://proxmox-server01.example.com:8006/api2/json"
+}
+
+resource "proxmox_vm_qemu" "resource-name" {
+  name        = "VM-name"
+  target_node = "Node to create the VM on"
+  # iso         = "ISO file name"
+
+  # or for a Clone VM operation
+  clone = "template to clone"
+
+  # or for a PXE boot VM operation
+  # pxe = true
+  # boot = "scsi0;net0"
+  # agent = 0
+}
+```
+
+Envierment vars
+
+```bash
+export PM_API_TOKEN_ID="terraform-prov@pve!mytoken"
+export PM_API_TOKEN_SECRET="afcd8f45-acc1-4d0f-bb12-a70b0777ec11"
+```
