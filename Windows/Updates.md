@@ -46,8 +46,8 @@ Stop-Service -name "cryptSvc"
 Stop-Service -name "bits"
 Stop-Service -name "msiserver"
 
-Rename-Item "C:\Windows\SoftwareDistribution SoftwareDistribution.old"
-Rename-Item "C:\Windows\System32\catroot2 Catroot2.old"
+Rename-Item "C:\Windows\SoftwareDistribution" "SoftwareDistribution.old"
+Rename-Item "C:\Windows\System32\catroot2" "Catroot2.old"
 
 Start-Service -name "wuauserv"
 Start-Service -name "cryptSvc"
@@ -62,6 +62,8 @@ Download the update that's failing manually and run `wusa.exe C:\Path\to\install
 
 ## Windows 10 Update Assistant
 
+<https://support.microsoft.com/en-us/topic/windows-10-update-assistant-3550dfb2-a015-7765-12ea-fba2ac36fb3f>
+
 <https://www.microsoft.com/en-us/software-download/windows10>
 
 ### Repair Image
@@ -69,3 +71,4 @@ Download the update that's failing manually and run `wusa.exe C:\Path\to\install
 ``` Power-Shell
 Repair-WindowsImage -Online -RestoreHealth
 ```
+

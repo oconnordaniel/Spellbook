@@ -1,4 +1,4 @@
-# Set up ZFS pool with encryption and compression
+# Set up ZFS pool 
 
 ## Install
 
