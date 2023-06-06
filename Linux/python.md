@@ -1,6 +1,6 @@
-# Pythong
+# Python
 
-## Pythong vit envierment setup
+## Python vit envierment setup
 
 ``` bash
 python3 -m venv {env_name}
