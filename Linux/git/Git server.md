@@ -50,3 +50,7 @@ cd project
 git commit -am 'Fix for README file'
 git push origin master
 ```
+
+## Remotes
+
+Add second remote. 
