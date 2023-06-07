@@ -45,9 +45,45 @@ systemctl status nagios-nrpe-server
 ## Configure Nagios Server to monitor Linux host
 
 ``` bash
-sudo apt install nagios-nrpe-server nagios-plugins
+sudo apt install nagios-nrpe-server nagios-plugins nagios-nrpe-plugin
 ```
 
+``` bash
+# run this to check if monitor can connect to client. 
+/usr/lib/nagios/plugins/check_nrpe -H <ip_of_client> 
+```
+
+Update the server's config file to be able to monitor clients with repeatable commands
+
+`/etc/nagios/nrpe.cfg`
+``` config
+```
+
+We don't care about user count that much. 
+
+``` config
+command[**check_users**]=/usr/lib/nagios/plugins/check_users -w 5 -c 10
+```
+
+Checks the client load. 
+The numbers after are the load across the last 1, 5, and 15 minutes.
+``` config
+command[**check_load**]=/usr/lib/nagios/plugins/check_load -w 15,10,5 -c 30,25,20
+```
+
+Checks the free disk space of a disk. 
+Defaults to sda but may need to be adjusted.
+
+```config
+command[**check_hda1**]=/usr/lib/nagios/plugins/check_disk -w 20% -c 10% -p /dev/sda
+```
+
+Checks the total number of processes. 
+
+```
+command[**check_total_procs**]=/usr/lib/nagios/plugins/check_procs -w 150 -c 200
+command[**check_zombie_procs**]=/usr/lib/nagios/plugins/check_procs -w 5 -c 10 -s Z
+```
 
 
 ## Thoughts
@@ -57,13 +93,9 @@ The server has a file or files that dictate what hosts to check and what service
 The server runs commands that are located at `/usr/lib/nagios/plugins/`. These are just command that can be run from the command line. In the `/etc/nagios/nrpe.cfg` file they are configure as follows. 
 
 ``` config
-command[**check_users**]=/usr/lib/nagios/plugins/check_users -w 5 -c 10
-command[**check_load**]=/usr/lib/nagios/plugins/check_load -w 15,10,5 -c 30,25,20
-command[**check_hda1**]=/usr/lib/nagios/plugins/check_disk -w 20% -c 10% -p /dev/hda1
-command[**check_zombie_procs**]=/usr/lib/nagios/plugins/check_procs -w 5 -c 10 -s Z
-command[**check_total_procs**]=/usr/lib/nagios/plugins/check_procs -w 150 -c 200
+
 ```
 
 And you can run `/usr/lib/nagios/plugins/<command> --help` to get parameters for commands. 
 
-The client needs to be setup with the nrpe-server package. Then just needs to be configure to allow the monitor server to check it. As well as having the ports opened.
+The client needs to be setup with the nrpe-server package. Then just needs to be configure to allow the monitor server to check it. As well as having the ports opened. `5666`
