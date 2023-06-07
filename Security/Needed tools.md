@@ -57,7 +57,7 @@ These tools offer a good starting point for building a SOC using open-source sol
 | --- | --- | 
 | Security Information and Event Management SIEM | OSSIM | 
 | Log Management and Log Analysis | Elk Stack | 
-| Network Traffic Analysis (NTA) | Suricata | 
+| Network Traffic Analysis (NTA) | Suricata, Zeek | 
 | Intrusion Detection System/Intrusion Prevention System IDS / IPS | Snort | 
 | Vulnerability Management | Openvas | 
 | Security Orchestration, Automation, and Response (SOAR) | | 
@@ -65,3 +65,4 @@ These tools offer a good starting point for building a SOC using open-source sol
 | Incident Response | The Hive | 
 | Threat Intelligence Platforms for IoCs | | 
 | Threat Hunting | | 
+| | Wazuh | 
