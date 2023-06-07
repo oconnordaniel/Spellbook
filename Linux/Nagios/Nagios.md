@@ -99,3 +99,5 @@ The server runs commands that are located at `/usr/lib/nagios/plugins/`. These a
 And you can run `/usr/lib/nagios/plugins/<command> --help` to get parameters for commands. 
 
 The client needs to be setup with the nrpe-server package. Then just needs to be configure to allow the monitor server to check it. As well as having the ports opened. `5666`
+
+On hold. Nagios is fighting back
