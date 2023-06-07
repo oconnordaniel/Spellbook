@@ -52,3 +52,16 @@ Certainly! Here are some popular open-source tools that you can consider for bui
 10. Wazuh: Wazuh is an open-source security monitoring and intrusion detection system. It combines OSSEC and ELK Stack, providing file integrity monitoring, log analysis, and security event correlation.
 
 These tools offer a good starting point for building a SOC using open-source solutions. Remember to evaluate each tool's features, community support, and compatibility with your environment before making a final decision.
+
+| Needed tools | What to use | 
+| --- | --- | 
+| Security Information and Event Management SIEM | OSSIM | 
+| Log Management and Log Analysis | Elk Stack | 
+| Network Traffic Analysis (NTA) | Suricata | 
+| Intrusion Detection System/Intrusion Prevention System IDS / IPS | Snort | 
+| Vulnerability Management | Openvas | 
+| Security Orchestration, Automation, and Response (SOAR) | | 
+| Endpoint Detection and Response (EDR) | | 
+| Incident Response | The Hive | 
+| Threat Intelligence Platforms for IoCs | | 
+| Threat Hunting | | 
