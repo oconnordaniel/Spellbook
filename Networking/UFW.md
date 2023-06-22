@@ -1,6 +1,9 @@
+
+``` bash 
 sudo ufw status
 sudo ufw reload
 
+sudo ufw default deny incoming
 sudo ufw allow proto tcp from 10.10.10.0/24 to any port ###
 
 ### ssh
@@ -9,7 +12,6 @@ sudo ufw allow proto tcp from 10.10.10.0/24 to any port ###
 ### http https
 80/tcp 		http
 443/tcp 	https
-8080/tcp	alt for http proxi
 
 ### DNS
 53/tcp
@@ -20,5 +22,4 @@ sudo ufw allow proto tcp from 10.10.10.0/24 to any port ###
 
 # SMB
 445/tcp
-
-
+```
