@@ -1,5 +1,5 @@
 ``` cmd
-robocopy "\Source\Folder\no\slash" "\Dest\Folder\no\slash" /s /z /r:3 /copy:DAT /dcopy:DA /log+:"C:\Users\$USER\Desktop\log.txt"
+robocopy "C:\Source\Folder\no\slash" "C:\Dest\Folder\no\slash" /s /z /r:3 /copy:DAT /dcopy:DA /log+:"C:\Users\$USER\Desktop\log.txt"
 ```
 
 /s - Copies subdirectories. This option automatically excludes empty directories.
