@@ -2,5 +2,6 @@
   "interfaceFontFamily": "Source Code Pro",
   "accentColor": "#0078d4",
   "baseFontSize": 14,
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "cssTheme": ""
 }
