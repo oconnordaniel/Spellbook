@@ -5,6 +5,7 @@
   "vimMode": true,
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "Hardware",
-  "livePreview": false,
-  "spellcheck": true
+  "livePreview": true,
+  "spellcheck": true,
+  "defaultViewMode": "source"
 }
