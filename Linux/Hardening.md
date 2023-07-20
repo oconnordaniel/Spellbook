@@ -2,8 +2,6 @@
 
 https://wiki.archlinux.org/title/Security
 
-## MacOS
-
 ## MikroTik
 https://wiki.mikrotik.com/wiki/Manual:Securing_Your_Router
 

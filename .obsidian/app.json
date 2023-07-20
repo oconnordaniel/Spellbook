@@ -4,7 +4,8 @@
   "tabSize": 4,
   "vimMode": true,
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "Hardware",
+  "attachmentFolderPath": "Attachments/",
   "livePreview": false,
-  "spellcheck": true
+  "spellcheck": true,
+  "defaultViewMode": "preview"
 }
