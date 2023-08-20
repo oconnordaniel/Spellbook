@@ -2,7 +2,7 @@
 
 1. Identify the problem:
     - Gather information.
-        - Detirmine Scope
+        - Determine Scope
             - Identify symptoms.
             - Question users.
             - Determine if anything has changed.
