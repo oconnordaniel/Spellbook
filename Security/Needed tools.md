@@ -62,7 +62,7 @@ These tools offer a good starting point for building a SOC using open-source sol
 | Vulnerability Management | Openvas | 
 | Security Orchestration, Automation, and Response (SOAR) | | 
 | Endpoint Detection and Response (EDR) | | 
-| Incident Response | The Hive | 
+| Incident Response | [The Hive](https://tryhackme.com/room/thehiveproject) | 
 | Threat Intelligence Platforms for IoCs | | 
 | Threat Hunting | | 
 | | Wazuh | 
