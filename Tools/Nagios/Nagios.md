@@ -6,7 +6,7 @@
 
     <https://support.nagios.com/kb/article/nagios-core-installing-nagios-core-from-source-96.html#Ubuntu>
 
-	This has also been added to the install.sh scrip in the Ans-Nagios playbook
+ This has also been added to the install.sh scrip in the Ans-Nagios playbook
 
 1. Install the extra tools on the Nagios server
 
@@ -20,16 +20,15 @@
 
 3. Configure the NRPE server on the client
 
-The Nagios server has the nagios NRPE service running. 
+The Nagios server has the nagios NRPE service running.
 That service uses the `/usr/local/nagios/etc/nagios.cfg` as it's root config.
 In that file add the option to use the `/usr/local/nagios/etc/servers/ubuntu-host.cfg` file.
-Both the `servers/ubuntu-host.cfg` and the `objects/localhost.cfg` file are used to configure what commands to check. 
-The command file describes what commands to run. 
+Both the `servers/ubuntu-host.cfg` and the `objects/localhost.cfg` file are used to configure what commands to check.
+The command file describes what commands to run.
 
 The server runs commands that are located at `/usr/lib/nagios/plugins/`. These are just command that can be run from the command line. In the `/etc/nagios/nrpe.cfg` file they are configure as follows. And you can run `/usr/lib/nagios/plugins/<command> --help` to get parameters for commands.
 
 The client needs to be setup with the `nagios-nrpe-server` package. Then just needs to be configure to allow the monitor server to check it. As well as having the ports opened. `5666`
-
 
 ### Install NRPE Script
 
@@ -122,7 +121,6 @@ define command{
     command_line $USER1$/check_nrpe -H $HOSTADDRESS$ -c $ARG1$
 }
 ```
-
 
 We don't care about user count that much.
 
