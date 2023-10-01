@@ -1,6 +1,8 @@
+# Zeek
+
 ## Intro
 
-Zeek is functionally (as far as I can tell) a super fancy `tcpdump` tool. 
+Zeek is functionally (as far as I can tell) a super fancy `tcpdump` tool.
 
 ## Install Zeek
 
@@ -41,7 +43,7 @@ sudo /opt/zeek/bin/zeekctl status
 
 ## Reading logs
 
-Logs are in the `/opt/zeek/logs` directory. Current is the current running process and the rest will have a dated folder. 
+Logs are in the `/opt/zeek/logs` directory. Current is the current running process and the rest will have a dated folder.
 
 ## Running Zeek against .pcap
 

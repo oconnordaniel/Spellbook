@@ -1,4 +1,4 @@
-## Tools for a SIEM
+# Tools for a SIEM
 
 To build a Security Operations Center (SOC), you would typically need a combination of hardware, software, and other tools. Here are some essential components and tools commonly used in a SOC setup:
 
@@ -26,8 +26,7 @@ To build a Security Operations Center (SOC), you would typically need a combinat
 
 It's worth noting that building a SOC requires not only the right tools but also skilled personnel, well-defined processes, and appropriate security policies. Collaboration and communication tools, such as ticketing systems and secure messaging platforms, are also crucial for effective SOC operations.
 
-
-## Open source tools. 
+## Open source tools
 
 Certainly! Here are some popular open-source tools that you can consider for building a SOC:
 
@@ -53,16 +52,16 @@ Certainly! Here are some popular open-source tools that you can consider for bui
 
 These tools offer a good starting point for building a SOC using open-source solutions. Remember to evaluate each tool's features, community support, and compatibility with your environment before making a final decision.
 
-| Needed tools | What to use | 
-| --- | --- | 
-| Security Information and Event Management SIEM | OSSIM | 
-| Log Management and Log Analysis | Elk Stack | 
-| Network Traffic Analysis (NTA) | Suricata, Zeek | 
-| Intrusion Detection System/Intrusion Prevention System IDS / IPS | Snort | 
-| Vulnerability Management | Openvas | 
-| Security Orchestration, Automation, and Response (SOAR) | | 
-| Endpoint Detection and Response (EDR) | | 
-| Incident Response | [The Hive](https://tryhackme.com/room/thehiveproject) | 
-| Threat Intelligence Platforms for IoCs | | 
-| Threat Hunting | | 
-| | Wazuh | 
+| Needed tools | What to use |
+| --- | --- |
+| Security Information and Event Management SIEM | OSSIM |
+| Log Management and Log Analysis | Elk Stack |
+| Network Traffic Analysis (NTA) | Suricata, Zeek |
+| Intrusion Detection System/Intrusion Prevention System IDS / IPS | Snort |
+| Vulnerability Management | Openvas |
+| Security Orchestration, Automation, and Response (SOAR) | |
+| Endpoint Detection and Response (EDR) | |
+| Incident Response | [The Hive](https://tryhackme.com/room/thehiveproject) |
+| Threat Intelligence Platforms for IoCs | |
+| Threat Hunting | |
+| | Wazuh |

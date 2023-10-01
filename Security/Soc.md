@@ -15,7 +15,7 @@ Find the guide. Understand the security profile of the application.
 
 ## Memory
 
-**Volatility**
+Volatility
 
 ## Egress Traffic
 
@@ -35,7 +35,7 @@ Find the guide. Understand the security profile of the application.
 - **2625**: Logon failure
 - **4768**: Kerberos Auth. Request
 - **4769**: Kerberos Service Ticket Resquest
-- 4776: NTLM Auth. 
+- 4776: NTLM Auth.
 - 4672: Assign Special Privileges
 
 ### Sigma event logs
@@ -46,7 +46,7 @@ Find the guide. Understand the security profile of the application.
 
 - E lastic Search
 - L og stash
-- K ibana 
+- K ibana
 
 ## Endpoint
 
@@ -73,20 +73,19 @@ WinRM
 MS Ketberos
     LANMAN/NTLM/NTLMv2
 
+## Vuln Mgt
 
-## Vuln Mgt.
-
-Work back from the vulnerability. Not from the score. 
+Work back from the vulnerability. Not from the score.
 
 ## Threat Emulation
 
-> If it hasn't been tested, how do you know it works 
+> If it hasn't been tested, how do you know it works
 
 Kaldera
 
 Atomic Red Team
 
-# Classes
+## Classes
 
 Intro to Sec. - Free
 

@@ -18,6 +18,7 @@ sudo systemctl status suricata
 `/etc/suricata/`
 
 `suricata.config`
+
 ``` yaml
 vars:
     address-groups:
