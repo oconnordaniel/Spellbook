@@ -18,5 +18,3 @@
 5. Testing
 
 6. Docs
-
-Requierments
