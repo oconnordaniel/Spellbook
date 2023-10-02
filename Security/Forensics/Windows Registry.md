@@ -1,3 +1,4 @@
+# Notable RegKeys
 
 1. HKEY_CURRENT_USER
 2. HKEY_USERS
@@ -17,4 +18,8 @@ The majority of these hives are located in the `C:\Windows\System32\Config` dire
 
 1. **NTUSER.DAT** (mounted on `HKEY_CURRENT_USER` when a user logs in)
 2. **USRCLASS.DAT** (mounted on `HKEY_CURRENT_USER\Software\CLASSES`)
-3. 
+3. ****
+
+## References
+
+<https://tryhackme.com/room/windowsforensics1>

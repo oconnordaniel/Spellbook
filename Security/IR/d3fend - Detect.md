@@ -1,7 +1,8 @@
 # d3fend - Detect
-## File Analysis 
 
-The ability to sort and categorize files into bad, good, and unknown. 
+## File Analysis
+
+The ability to sort and categorize files into bad, good, and unknown.
 
 ## Identifier Analysis
 

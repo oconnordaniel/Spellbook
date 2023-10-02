@@ -1,1 +1,3 @@
-https://documentation.wazuh.com/current/quickstart.html
+# Wazuh
+
+<https://documentation.wazuh.com/current/quickstart.html>
