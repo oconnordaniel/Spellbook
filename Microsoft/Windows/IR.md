@@ -1,3 +1,5 @@
+# Windows IR quick commands
+
 ``` cmd
 # Get list of all open connections
 netstat -naob

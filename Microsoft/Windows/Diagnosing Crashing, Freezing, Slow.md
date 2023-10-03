@@ -1,3 +1,4 @@
+# Crashing
 
 ## Event Logs
 
@@ -5,7 +6,7 @@ See [[Event Logs]]
 
 ## System Resources
 
-https://techcommunity.microsoft.com/t5/ask-the-performance-team/using-resource-monitor-to-troubleshoot-windows-performance/ba-p/375008
+<https://techcommunity.microsoft.com/t5/ask-the-performance-team/using-resource-monitor-to-troubleshoot-windows-performance/ba-p/375008>
 
 ## Diskchecks
 
@@ -13,7 +14,7 @@ See [[Disk]]
 
 ## Hardware Diagnosis
 
-For most Dell and HP laptops, you can reboot the devices and use an Fn key to boot into hardware diagnosis mode. 
+For most Dell and HP laptops, you can reboot the devices and use an Fn key to boot into hardware diagnosis mode.
 
 Windows Memory Diagnostics Tool (checks RAM)
 
@@ -36,7 +37,7 @@ See [[Updates]]
 
 ## Reliability Monitor
 
-https://techcommunity.microsoft.com/t5/ask-the-performance-team/using-reliability-monitor-for-troubleshooting/ba-p/372962
+<https://techcommunity.microsoft.com/t5/ask-the-performance-team/using-reliability-monitor-for-troubleshooting/ba-p/372962>
 
 ## Visual Performance
 

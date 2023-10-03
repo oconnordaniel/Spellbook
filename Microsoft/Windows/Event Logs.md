@@ -1,26 +1,28 @@
-Run Event Viewer `eventvwr.msc` 
+# Win Event Logs
+
+Run Event Viewer `eventvwr.msc`
 
 Need to parse out the useful commands from [TryHackMe - Win Event Logs](https://tryhackme.com/room/windowseventlogs)
 
-### Get logs
+## Get logs
 
 ``` Powershell
 Get-WinEvent -ListLog *
 ```
 
-### Powershell - Get-WinEvent Providers
+## Powershell - Get-WinEvent Providers
 
 ``` Powershell
 Get-WinEvent -ListProvider *
 ```
 
-### Powershell - Get-WinEvent Filters
+## Powershell - Get-WinEvent Filters via where-object
 
 ``` Powershell
 Get-WinEvent -LogName Application | Where-Object { $_.ProviderName -Match 'WLMS' }
 ```
 
-### Powershell - Get-WinEvent Filters
+## Powershell - Get-WinEvent Filters via hashable
 
 ``` Powershell
 Get-WinEvent -FilterHashtable @{
@@ -54,4 +56,3 @@ Get-WinEvent -LogName Security -FilterXPath '*/EventData/Data[@Name="TargetUserN
 |4648|A logon was attempted using explicit credentials|
 |4634|An account was logged off|
 |4647|User initiated logoff|
-
