@@ -1,4 +1,4 @@
-## Adding printers to print server
+# Adding printers to print server
 
 1. Add printer to print server
 2. Create GPO or add printer to GPO

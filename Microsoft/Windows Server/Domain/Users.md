@@ -1,4 +1,4 @@
-New AD user
+# New AD user
 
 ``` Powershell
 PS C:\> $NewPassword = (Read-Host -Prompt "Provide New Password" -AsSecureString) 
