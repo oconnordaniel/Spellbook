@@ -19,7 +19,7 @@
 
 6. Docs
 
-
+---
 
 Steps from TimP
 Requirements, Specifications, Design, Build, Test, Deploy
