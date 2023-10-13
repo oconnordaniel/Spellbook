@@ -66,8 +66,11 @@ Download the update that's failing manually and run `wusa.exe C:\Path\to\install
 
 <https://www.microsoft.com/en-us/software-download/windows10>
 
+[Trouble shooting](https://learn.microsoft.com/en-us/windows/deployment/upgrade/resolve-windows-10-upgrade-errors)
+
 ### Repair Image
 
 ``` Power-Shell
 Repair-WindowsImage -Online -RestoreHealth
 ```
+
