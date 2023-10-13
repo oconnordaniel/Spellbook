@@ -30,6 +30,11 @@ Hives containing user information:
 
 AmCache hive. This hive is located in `C:\Windows\AppCompat\Programs\Amcache.hve`. Windows creates this hive to save information on programs that were recently run on the system.
 
+Transaction Logs and Backups:
+
+Transaction Logs are stored in the same folder as the hive. They have the extention `.LOG1` 
+Backup hives are stored at `C:\Windows\System32\Config\RegBack`
+
 ## References
 
 <https://tryhackme.com/room/windowsforensics1>
