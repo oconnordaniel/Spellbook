@@ -35,6 +35,21 @@ Transaction Logs and Backups:
 Transaction Logs are stored in the same folder as the hive. They have the extention `.LOG1` 
 Backup hives are stored at `C:\Windows\System32\Config\RegBack`
 
+## Notable RegKeys
+
+Version: 
+`SOFTWARE\Microsoft\Windows NT\CurrentVersion`
+
+Current and previous versions:
+`HKLM\SYSTEM\CurrentControlSet`
+`        \ControlSet001`
+`        \ControlSet002`
+
+`CurrentControlSet` is loaded from the value in `SYSTEM\Select\Current`. The key `SYSTEM\Select\LastKnownGood` hold the last know good config. `REG_WORD 0x00000001`  means `\ControlSet001`
+
+Timezone: 
+`SYSTEM\CurrentControlSet\Control\TimeZoneInformation`
+
 ## References
 
 <https://tryhackme.com/room/windowsforensics1>
