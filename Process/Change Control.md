@@ -21,5 +21,42 @@
 
 ---
 
-Steps from TimP
-Requirements, Specifications, Design, Build, Test, Deploy
+- Requirements
+- Specifications
+- Design
+- Build
+- Test
+- Deploy
+
+
+---
+Needs
+
+Requirements, Scope, Specs, Resources
+
+
+Design, Build, Test
+
+Docs: Setup and maintenance
+
+Plan and Deploy
+
+
+---
+
+Init 
+
+Plan: Test
+
+Exec
+
+Contol
+
+Finalize
+    Docs
+
+Plan: Prod
+
+Control
+
+Finalize 
