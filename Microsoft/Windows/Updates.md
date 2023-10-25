@@ -73,4 +73,3 @@ Download the update that's failing manually and run `wusa.exe C:\Path\to\install
 ``` Power-Shell
 Repair-WindowsImage -Online -RestoreHealth
 ```
-
