@@ -22,7 +22,7 @@ Wipe disks to be used
 
 Create ZFS Pool
 
-`zpool create [Pool Name] -m /mnt/[mount point] /dev/sdX -o ashift=12`
+`zpool create [Pool Name] raidzX -m /mnt/[mount point] /dev/sdX -o ashift=12`
 
 Create ZFS File system
 

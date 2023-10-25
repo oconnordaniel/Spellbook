@@ -1,6 +1,7 @@
+# Info on sys internals
 
-https://learn.microsoft.com/en-us/sysinternals
+<https://learn.microsoft.com/en-us/sysinternals>
 
 smb `\\live.sysinternals.com\tools`
-web https://live.sysinternals.com/
+web <https://live.sysinternals.com/>
 Public accessible tools

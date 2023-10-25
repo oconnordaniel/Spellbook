@@ -1,4 +1,6 @@
-In case Windows puts it's boot partition in the wrong drive... 
+# Move win boot partion
+
+In case Windows puts it's boot partition in the wrong drive...
 
 - Boot the computer using the **Windows 7/8/8.1/10** installation media.  
 - On the first screen, press **SHIFT+F10** to bring up the command prompt.  

@@ -1,3 +1,5 @@
+# RoboCopy
+
 ``` cmd
 robocopy "C:\Source\Folder\no\slash" "C:\Dest\Folder\no\slash" /s /z /r:3 /copy:DAT /dcopy:DA /log+:"C:\Users\$USER\Desktop\log.txt"
 ```
@@ -12,22 +14,22 @@ robocopy "C:\Source\Folder\no\slash" "C:\Dest\Folder\no\slash" /s /z /r:3 /copy:
 
 /copy:`<copyflags>` - Specifies which file properties to copy. The valid values for this option are:
 
--   **D** - Data
--   **A** - Attributes
--   **T** - Time stamps
--   **X** - Skip alt data streams
--   **S** - NTFS access control list (ACL)
--   **O** - Owner information
--   **U** - Auditing information
+- **D** - Data
+- **A** - Attributes
+- **T** - Time stamps
+- **X** - Skip alt data streams
+- **S** - NTFS access control list (ACL)
+- **O** - Owner information
+- **U** - Auditing information
 
 The default value for the **/COPY** option is **DAT** (data, attributes, and time stamps). The **X** flag will be ignored if either **/B** or **/ZB** is used.
 
 /dcopy:`<copyflags>` - Specifies what to copy in directories. The valid values for this option are:
 
--   **D** - Data
--   **A** - Attributes
--   **T** - Time stamps
--   **E** - Extended attribute
--   **X** - Skip alt data streams
+- **D** - Data
+- **A** - Attributes
+- **T** - Time stamps
+- **E** - Extended attribute
+- **X** - Skip alt data streams
 
 The default value for this option is **DA** (data and attributes).

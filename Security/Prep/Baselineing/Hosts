@@ -1,0 +1,12 @@
+# Baseling hosts and applications
+
+> OS's are solid. Keep them up to date. Focus on the applications and services you're running.
+
+- Processes
+- Users
+- Network Connections
+- Open Ports
+- Logs
+
+Find the guide. Understand the security profile of the application.
+<https://www.cisecurity.org/cis-benchmarks>
