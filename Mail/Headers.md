@@ -27,3 +27,15 @@ At the end of the headers, the message starts with an HTML
 6. **Authenticaton-Results**: **Smtp.mailfrom**; and **header.from**; - The domain the email was sent from.
 7. **Reply-To** - This is the email address a reply email will be sent to instead of the **From** email address
 8. **Content-Type** - For attachments
+
+## IoCs
+
+Below are typical characteristics phishing emails have in common:
+
+- The **sender email name/address** will masquerade as a trusted entity (**[email spoofing](https://www.proofpoint.com/us/threat-reference/email-spoofing)**)
+- The email subject line and/or body (text) is written with a **sense of urgency** or uses certain keywords such as **Invoice**, **Suspended**, etc. 
+- The email body (HTML) is designed to match a trusting entity (such as Amazon)
+- The email body (HTML) is poorly formatted or written (contrary from the previous point)
+- The email body uses generic content, such as Dear Sir/Madam. 
+- **Hyperlinks** (oftentimes uses URL shortening services to hide its true origin)
+- A [malicious attachment](https://www.proofpoint.com/us/threat-reference/malicious-email-attachments) posing as a legitimate document
