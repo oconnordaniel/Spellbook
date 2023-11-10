@@ -39,3 +39,10 @@ Below are typical characteristics phishing emails have in common:
 - The email body uses generic content, such as Dear Sir/Madam. 
 - **Hyperlinks** (oftentimes uses URL shortening services to hide its true origin)
 - A [malicious attachment](https://www.proofpoint.com/us/threat-reference/malicious-email-attachments) posing as a legitimate document
+
+To Collect: 
+
+- All URL links in the message.
+    - Check for URL shorteners and follow them. You can usually obtain this information by going to the `https://original.url/123+` or `https://preview.original.url/123`
+- Name of all attachments.
+- Hash values of all attachments and URLs that go to files. 

@@ -104,3 +104,10 @@ Trusted
     `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json -s`
 7. Then make sure the agent is started
     `sudo systemctl start amazon-cloudwatch-agent`
+
+
+
+597070230033, 
+597070230033
+597070230033
+597070230033
