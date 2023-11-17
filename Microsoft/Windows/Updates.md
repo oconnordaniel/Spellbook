@@ -68,6 +68,8 @@ Download the update that's failing manually and run `wusa.exe C:\Path\to\install
 
 [Trouble shooting](https://learn.microsoft.com/en-us/windows/deployment/upgrade/resolve-windows-10-upgrade-errors)
 
+[Error 0x80240022](https://www.techinpost.com/error-0x80240022-windows-code/)
+
 ### Repair Image
 
 ``` Power-Shell
