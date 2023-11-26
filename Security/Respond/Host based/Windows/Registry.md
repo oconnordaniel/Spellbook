@@ -50,6 +50,9 @@ Current and previous versions:
 Timezone:
 `SYSTEM\CurrentControlSet\Control\TimeZoneInformation`
 
+Run things at startup.
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run`
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce`
 ## References
 
 <https://tryhackme.com/room/windowsforensics1>

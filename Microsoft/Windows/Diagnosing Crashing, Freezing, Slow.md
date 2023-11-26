@@ -2,7 +2,7 @@
 
 ## Event Logs
 
-See [[Event Logs]]
+See [[Microsoft/Windows/Event Logs]]
 
 ## System Resources
 
