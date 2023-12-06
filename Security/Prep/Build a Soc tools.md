@@ -65,3 +65,40 @@ These tools offer a good starting point for building a SOC using open-source sol
 | Threat Intelligence Platforms for IoCs | |
 | Threat Hunting | |
 | | Wazuh |
+
+## Metrics
+
+1. Data
+2. A platform or tool to arrogate the data.
+3. An audience
+4. Key Performance Indicators (KPIs)
+
+Don'ts:
+
+- Ticket Volume
+- Number of Detections
+- Escalations
+
+Dos:
+
+- Response Time
+    Time to Touch - An agent has acknowledged the ticket.
+        This should be tracked on a long term (quarters) basis.
+    Time to Directive - How long it takes to make a decision on what to do next.
+
+- Alert Fidelity
+
+|  | Positive | Negative |
+| - | - | - |
+| True | True  Positive | True Negative |
+| False | False Positive | False Negative |
+
+Track the outcome of the results of the alert
+
+`(TP / Total Events) * 100 =` Percent of alert fidelity
+
+Used for detection tuning.
+
+- Coverage
+
+Map detections to MITER matrix to see if you have blind spots.

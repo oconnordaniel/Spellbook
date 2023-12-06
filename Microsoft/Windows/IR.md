@@ -14,3 +14,7 @@ tasklist /m /fi "pid eq #"
     wow64win.dll
     wow64cpu.dll
 ```
+
+``` Powershell 
+PS> Get-ScheduledTask
+```

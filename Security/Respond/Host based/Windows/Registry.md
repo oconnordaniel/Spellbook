@@ -32,24 +32,27 @@ AmCache hive. This hive is located in `C:\Windows\AppCompat\Programs\Amcache.hv
 
 Transaction Logs and Backups:
 
-Transaction Logs are stored in the same folder as the hive. They have the extention `.LOG1` 
+Transaction Logs are stored in the same folder as the hive. They have the extention `.LOG1`
 Backup hives are stored at `C:\Windows\System32\Config\RegBack`
 
 ## Notable RegKeys
 
-Version: 
+Version:
 `SOFTWARE\Microsoft\Windows NT\CurrentVersion`
 
 Current and previous versions:
 `HKLM\SYSTEM\CurrentControlSet`
-`        \ControlSet001`
-`        \ControlSet002`
+`\ControlSet001`
+`\ControlSet002`
 
 `CurrentControlSet` is loaded from the value in `SYSTEM\Select\Current`. The key `SYSTEM\Select\LastKnownGood` hold the last know good config. `REG_WORD 0x00000001`  means `\ControlSet001`
 
-Timezone: 
+Timezone:
 `SYSTEM\CurrentControlSet\Control\TimeZoneInformation`
 
+Run things at startup.
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run`
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce`
 ## References
 
 <https://tryhackme.com/room/windowsforensics1>
