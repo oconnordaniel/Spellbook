@@ -56,3 +56,9 @@ Run things at startup.
 ## References
 
 <https://tryhackme.com/room/windowsforensics1>
+
+Application Shims
+```
+HKLM\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\AppCompatFlags\Custom\
+HKLM\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\AppCompatFlags\InstalledSDB\
+```

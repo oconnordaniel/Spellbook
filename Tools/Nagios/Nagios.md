@@ -14,6 +14,8 @@
     - nagios-plugins
     - nagios-nrpe-plugin
 
+ncpa
+
     - nagios-nrpe?
 
 2. Install the NRPE server on the client
@@ -70,12 +72,12 @@ Configure the NRPE server to listen.
 # Address that nrpe should bind to in case there are more than one interface
 # and you do not want nrpe to bind on all interfaces.
 # This should be the local ip address.
-server_address=
+server_address=0.0.0.0
 
 # ALLOWED HOST ADDRESSES
 # This is an optional comma-delimited list of IP address or hostnames
 # that are allowed to talk to the NRPE daemon.
-allowed_hosts=
+allowed_hosts=10.10.10.0/24
 ```
 
 Restart the NRPE server.
