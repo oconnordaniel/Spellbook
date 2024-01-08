@@ -1,8 +1,14 @@
 # Win Event Logs
 
+```powershell
+Event logs:
+C:\Windows\System32\WinEVT\Logs\*.evtx
+Registry keys:
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\<channel>\<provider>
+```
+
 Run Event Viewer `eventvwr.msc`
 
-Need to parse out the useful commands from [TryHackMe - Win Event Logs](https://tryhackme.com/room/windowseventlogs)
 
 ## Get logs
 
