@@ -6,5 +6,6 @@
   "cssTheme": "",
   "translucency": false,
   "showViewHeader": true,
-  "baseFontSizeAction": false
+  "baseFontSizeAction": false,
+  "monospaceFontFamily": "Source Code Pro"
 }
