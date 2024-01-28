@@ -38,3 +38,25 @@ Client:
 
 1. Install nrpe
 2. Configure file to allow access
+
+### Config files
+
+https://assets.nagios.com/downloads/nagioscore/docs/nagioscore/3/en/objectdefinitions.html
+
+https://assets.nagios.com/downloads/nagioscore/docs/nagioscore/3/en/objectinheritance.html
+
+```
+├── objects
+|   ├── commands.cfg
+└── servers
+    ├── services.cfg
+    |       check_alive
+    |       check_mem
+    |       check_proc
+    |       check_disk?
+    ├── ubuntu-host.cfg
+    |       hostgroup { linux_server}
+    |       host { server_1 }
+    └       host { server_2 }
+    
+```
