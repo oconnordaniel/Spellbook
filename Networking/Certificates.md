@@ -1,13 +1,14 @@
+# SSL Certificates
 
 ## Step 1: Create CA
 
-Setup a CA.pem as the root cert
+Setup a CA.pem as the root cert.
 
 ```shell
 openssl genrsa -aes256 -out dans-ca-key.pem 4096
 ```
 
-This will need to be password protected
+This will need to be password protected.
 
 Generate a public CA Cert signed by the root cert.
 
@@ -17,19 +18,19 @@ openssl req -new -x509 -sha256 -days 1095 -key dans-ca-key.pem -out dans-ca.pem
 
 ## Step 2: Generate Cert for Service
 
-Create an RSA key for the service 
+Create an RSA key for the service.
 
 ```shell
 openssl genrsa -out dans-toster-key.pem 4096
 ```
 
-Create a Certificate Signing Request (CSR) for our service
+Create a Certificate Signing Request (CSR) for our service.
 
 ```shell
 openssl req -new -sha256 -subj "/CN=dans-toaster.oconnordaniel.lan" -key dans-toster-key.pem -out dans-toaster.csr
 ```
 
-SFr SAN (Subject alt names)
+SFr SAN (Subject alt names).
 
 ``` shell
 echo "subjectAltName=DNS:your-dns.record,IP:10.10.10.1" >> toaster-SAN.cnf
@@ -42,7 +43,7 @@ echo extendedKeyUsage = serverAuth >> extfile.cnf
 
 ## Step 3: Sign the CSR with the Root
 
-``` shell 
+``` shell
 openssl x509 -req \ # Create an x509
     -sha256 -days 1095 \ # options for key lenth and days
     -CA dans-ca.pem -CAkey dans-ca-key.pem \ # our RootCA keys
@@ -60,7 +61,7 @@ openssl x509 -req \
     -out dans-toaster-cert.pem 
 ```
 
-``` shell 
+``` shell
 cat dans-toaster-cert.pem >> ./dans-toaster.pem
 cat dans-ca.pem >> ./dans-toaster.pem
 ```
