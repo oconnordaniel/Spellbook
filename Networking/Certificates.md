@@ -16,6 +16,13 @@ Generate a public CA Cert signed by the root cert.
 openssl req -new -x509 -sha256 -days 1095 -key dans-ca-key.pem -out dans-ca.pem
 ```
 
+Reading Certs
+
+``` shell 
+openssl x509 -in ca.pem -text
+openssl x509 -in ca.pem -purpose -noout -text
+```
+
 ## Step 2: Generate Cert for Service
 
 Create an RSA key for the service.
