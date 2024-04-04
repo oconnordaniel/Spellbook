@@ -62,3 +62,4 @@ Get-WinEvent -LogName Security -FilterXPath '*/EventData/Data[@Name="TargetUserN
 |4648|A logon was attempted using explicit credentials|
 |4634|An account was logged off|
 |4647|User initiated logoff|
+|4740|A user account was locked out|
