@@ -3,7 +3,7 @@
 Calendar access does not have an easy GUI way to manage it.  
 
 You must first connect to exchange online via powershell  
-`Connect-ExchangeOnline -UserPrincipalName fit_admin@domain.tld`
+`Connect-ExchangeOnline -UserPrincipalName user@domain.tld`
 
 To view the permissions of the calendar
 `Get-MailboxFolderPermission user!@domain.tld:\calendar`
