@@ -16,6 +16,10 @@
 
 ### Identification
 
+How did they get in? 
+Where did they go? 
+What have they done? 
+
 - Sources
   - Network Devices
   - Firewall Logs
