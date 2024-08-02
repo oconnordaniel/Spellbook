@@ -8,15 +8,13 @@
 - Purchases / Billing
 - Other Important
 
-Since ITGlue is synced with Autotask and possibly O365, it's not advised to edit contacts directly under the contacts tab. Important contacts should be listed in the Home tab.
-
 Physical location (s)
-Rough building layout. More importanly, where is the IT in the building.
+Rough building layout. More importantly, where is the IT in the building.
 
 ## Contract
 
 - Contract type
-- Primary FIT admin
+- Assigned system admin
 
 ## Hardware
 

@@ -53,6 +53,19 @@ Timezone:
 Run things at startup.
 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run`
 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce`
+
+### UserAsist
+
+Related to Recently Added section of start menu
+
+`HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist`
+
 ## References
 
 <https://tryhackme.com/room/windowsforensics1>
+
+Application Shims
+```
+HKLM\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\AppCompatFlags\Custom\
+HKLM\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\AppCompatFlags\InstalledSDB\
+```
