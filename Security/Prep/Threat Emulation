@@ -1,5 +1,14 @@
 # Emulation
 
+## Document Attack Vectors
+
+- Attrition
+- Email-based attacks
+- External or removable media
+- Impersonation
+- Improper use
+- Theft of equipment
+
 ## Vuln Mgt
 
 Work back from the vulnerability. Not from the score.
