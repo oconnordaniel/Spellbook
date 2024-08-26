@@ -1,5 +1,32 @@
 # Security Overview
 
+
+
+
+
+## NIST Foresntic Proccess
+
+### Collect - Media
+    Most volatile to least volatile
+    - Running Processes
+    - Memory
+    - Network
+    - Disk
+        - NTFS file system
+        - Windows Registry
+        - Windows Event Logs
+        - Windows Prefetch
+    - Logs 
+
+    Maintain Chain of Custody
+    - Hash of the data. Memory, Disk, etc.
+
+### Examine - Data
+
+### Analyze - Information
+
+### Report - Evidence
+
 ## PICERL Playbook
 
 ### Preparation
@@ -33,3 +60,15 @@
 ### Recovery
 
 ### Lessons
+
+
+## From CS report
+
+1. IMMEDIATE THREAT VISIBILITY
+2. ACTIVE THREAT CONTAINMENT
+3. ACCELERATED FORENSIC ANALYSIS
+4. REAL-TIME RESPONSE AND RECOVERY
+5. ENTERPRISE REMEDIATION
+6. THREAT HUNTING AND MONITORING
+7. MANAGED DETECTION AND RESPONSE
+
