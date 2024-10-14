@@ -1,24 +1,22 @@
 # Security Overview
 
-
-
-
-
-## NIST Foresntic Proccess
+## NIST Forensic Process
 
 ### Collect - Media
-    Most volatile to least volatile
-    - Running Processes
-    - Memory
-    - Network
-    - Disk
-        - NTFS file system
-        - Windows Registry
-        - Windows Event Logs
-        - Windows Prefetch
-    - Logs 
 
-    Maintain Chain of Custody
+Most volatile to least volatile
+
+- Running Processes
+- Memory
+- Network
+- Disk
+    - NTFS file system
+    - Windows Registry
+    - Windows Event Logs
+    - Windows Prefetch
+- Logs 
+
+Maintain Chain of Custody
     - Hash of the data. Memory, Disk, etc.
 
 ### Examine - Data
@@ -60,7 +58,6 @@
 ### Recovery
 
 ### Lessons
-
 
 ## From CS report
 
