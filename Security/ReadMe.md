@@ -11,6 +11,9 @@ Most volatile to least volatile
 - Network
 - Disk
     - NTFS file system
+        - `$MFT` - Master file table
+        - `$LogFIle` - Tracks MFT metadata changes
+        - `$UsnJrnl` - Tracks file changes
     - Windows Registry
     - Windows Event Logs
     - Windows Prefetch
