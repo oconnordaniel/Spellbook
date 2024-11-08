@@ -75,7 +75,7 @@ Spell out EVERYTHING about the detection.
 - Notes on filtering
 - Resources
 How to respond
-[ADS - Alerting Detection Stratagy](https://github.com/palantir/alerting-detection-strategy-framework)
+[ADS - Alerting Detection Strategy](https://github.com/palantir/alerting-detection-strategy-framework)
 
 ### 6 Onboarding
 
