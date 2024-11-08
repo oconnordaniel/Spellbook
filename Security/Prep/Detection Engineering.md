@@ -44,7 +44,7 @@ Theory -> High Quality Detection
 - Keep it as agnostic and reusable as possible (i.e. multi tenant.)
 - Allow for exceptions
     i.e. Legacy apps, or special users.
-- When filtering, keep in mind Risk Management. 
+- When filtering, keep in mind Risk Management.
     Avoidance - Filtering very selectively and dealing with more potential volume 
     Transfer - Scheduling threat hunts to look for a certain TTP on a regular cadence
     Acceptance - Sometimes a high volume detection is not worth the value it brings
@@ -85,7 +85,6 @@ Make sure you have 1 alert per event.
 Suppress / Group to a single event.
 
 ### 7 Continuous Improvement
-
 
 ## Terms
 
