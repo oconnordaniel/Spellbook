@@ -1,5 +1,31 @@
 # IR Tools
 
+## Power-shell Commands
+
+`>netstat` Show open network connection
+	`naob`
+	- n Displays addresses and port numbers in numerical form.
+	- a Displays all connections and listening ports.
+	- o Displays the owning process ID associated with each connection.
+	- b Displays the executable involved in creating each connection or listening port.
+	- f Displays Fully Qualified Domain Names (FQDN) for foreign addresses.
+
+`PS>Get-NetTCPConnection | Where-Object State -EQ Established`
+ 
+`>net view` Show open smb shares
+
+`>net session` Show open users. 
+
+`>tasklist`
+	- /SVC Displays services hosted in each process.
+	- /m show open dlls for each open process
+	- /m foo.dll - show all process that have foo.dll open.
+
+`>wmic process list full`
+`>wmic process get name,processid,parentprocessid`
+`>wmic process where processid=[pid] get name,parentprocessid,processid`
+`>wmic process where processid=[pid] get commandline`
+
 ## Eric Zimmerman's tools
 
 Eric Zimmerman is a security researcher who has written a few tools to help perform forensic analysis on the Windows platform. These tools help the registry, file system, timeline, and many other analyses. To learn more about these tools, you can check out the [Windows Forensics 1](https://tryhackme.com/room/windowsforensics1) and [Windows Forensics 2](https://tryhackme.com/room/windowsforensics2) rooms, where these tools are discussed concerning the different artifacts found in the Windows Operating System.

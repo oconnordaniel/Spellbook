@@ -1,10 +1,6 @@
 # Security Overview
 
-
-
-
-
-## NIST Foresntic Proccess
+## NIST Forensic Process
 
 ### Collect - Media
     Most volatile to least volatile
