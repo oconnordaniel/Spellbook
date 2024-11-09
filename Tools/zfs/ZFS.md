@@ -58,6 +58,15 @@ Restore file
 
 ## send recv
 
+***Setup User Permissions***
+
+1. Create Service User on Send
+2. Set ZFS permissions
+4. Create Service User on Recv
+5. Set ZFS permissions
+6. Create SSH key on Recv
+7. ssh-copy-id from Recv to Send
+
 ``` bash
 zfs snapshot and zfs replication is handled by sanoid
 configs are in ansible IaC

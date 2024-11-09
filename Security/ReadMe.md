@@ -3,18 +3,23 @@
 ## NIST Forensic Process
 
 ### Collect - Media
-    Most volatile to least volatile
-    - Running Processes
-    - Memory
-    - Network
-    - Disk
-        - NTFS file system
-        - Windows Registry
-        - Windows Event Logs
-        - Windows Prefetch
-    - Logs 
 
-    Maintain Chain of Custody
+Most volatile to least volatile
+
+- Running Processes
+- Memory
+- Network
+- Disk
+    - NTFS file system
+        - `$MFT` - Master file table
+        - `$LogFIle` - Tracks MFT metadata changes
+        - `$UsnJrnl` - Tracks file changes
+    - Windows Registry
+    - Windows Event Logs
+    - Windows Prefetch
+- Logs 
+
+Maintain Chain of Custody
     - Hash of the data. Memory, Disk, etc.
 
 ### Examine - Data
@@ -60,7 +65,6 @@ What have they done?
 ### Recovery
 
 ### Lessons
-
 
 ## From CS report
 
