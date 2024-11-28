@@ -12,6 +12,7 @@
 ```
 
 ``` bash
+groupadd samba
 sudo adduser --no-create-home --disabled-password --disabled-login <service>
 sudo usermod -aG samba <service>
 sudo usermod -aG samba dan
