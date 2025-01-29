@@ -65,17 +65,15 @@ sudo apt install python3 python3-pip
 python3 -m pip install --user ansible
 ```
 
-or 
+or
 
 ``` bash
 sudo apt install ansible
 ```
 
-
-
 ## Create SSH key for jenkins user
 
-``` bash 
+``` bash
 # may need to set password for Jenkins fist
 sudo passwd jenkins
 su - jenkins 
@@ -83,7 +81,7 @@ su - jenkins
 ssh-keygen -t ed25519 -C jenkins-key -f /var/lib/jenkins/.ssh/id_ed25519
 ```
 
-## Create API based access 
+## Create API based access
 
 ## Create Terraform files
 

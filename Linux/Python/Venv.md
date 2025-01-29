@@ -1,4 +1,4 @@
-Setup python enviorment
+# Setup python enviorment
 
 ``` bash
 sudo {{ package manager }} install python3 python3-pip python3-venv
