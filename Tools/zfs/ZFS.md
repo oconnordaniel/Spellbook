@@ -77,7 +77,15 @@ ssh [remote ip] zfs send -vi Path/to/Dataset | zfs receive BackupFS/BackupLocati
 /sbin/zfs send -vi Storage/StorageFS@zfs-auto-snap_daily-$(date -d "yesterday" '+%Y-%m-%d')-1225 Storage/StorageFS@zfs-auto-snap_daily-$(date '+%Y-%m-%d')-1225 | /sbin/zfs receive Backup/BackupFS
 ```
 
-Scrub
+### Send full snapshots
+
+On sending system:
+`zfs snapshot -r Pool/Dataset@snapshot`
+
+Then on receiving system:
+`ssh user@ip_address /sbin/zfs send -v -R Pool/Dataset@snapshot | /sbin/zfs receive New_Pool/New_Dataset`
+
+## Scrub
 
 `zpool scrub [Pool Name]`
 
