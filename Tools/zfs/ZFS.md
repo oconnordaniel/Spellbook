@@ -83,8 +83,10 @@ On sending system:
 `zfs snapshot -r Pool/Dataset@snapshot`
 
 Then on receiving system:
-`ssh user@ip_address /sbin/zfs send -v -R Pool/Dataset@snapshot | /sbin/zfs receive New_Pool/New_Dataset`
+`ssh user@ip_address /sbin/zfs send --verbose --replicate Pool/Dataset@snapshot | /sbin/zfs receive New_Pool/New_Dataset`
 
+
+[The -R option](https://openzfs.github.io/openzfs-docs/man/master/8/zfs-send.8.html#R) replicates "specified file system, and all descendent file systems, up to the named snapshot"
 ## Scrub
 
 `zpool scrub [Pool Name]`
