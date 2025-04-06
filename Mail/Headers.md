@@ -47,3 +47,34 @@ To Collect:
     Check for URL shorteners and follow them. You can usually obtain this information by going to the `https://original.url/123+` or `https://preview.original.url/123`
 - Name of all attachments.
 - Hash values of all attachments and URLs that go to files.
+
+## Report Template
+
+---
+### **Artifacts Retrieved**
+
+- **Sender**:
+- **Reply-to**:
+- **Date**:
+- **Sending Server IP**:
+- **Reverse DNS**:
+- **Recipients**:
+- **Subject**:
+- **URL**:
+- **Attachments**:
+
+### **Email Description**
+
+- A paragraph describing the body of the email
+
+### Users affected and actions taken to notify them
+
+### Analysis process, tools used, and results
+
+### Defensive measures taken
+
+- **Email artifact blocking** (subject line, sending address, sending server IP)
+- **Web artifact blocking** (URL, domain, IP)
+- **File artifact blocking** (file name, file hash)
+
+---
