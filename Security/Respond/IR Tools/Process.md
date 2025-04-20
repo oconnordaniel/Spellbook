@@ -1,6 +1,42 @@
+# Process
+
 1. **Identification** – The first stage identifies potential sources of relevant evidence or information (devices), as well as key custodians and location of data.
 2. **Preservation** – The process of preserving relevant electronically stored information (ESI). This is done by protecting the crime or incident scene, capturing visual images of the scene, and documenting all relevant information about the evidence and how it was acquired.
 3. **Collection** – Collecting digital information that may be relevant to the investigation. Collection may involve removing the electronic device(s) from the crime or incident scene and then imaging, copying or printing out its (their) content.
 4. **Analysis** – An in-depth systematic search of evidence relating to the incident being investigated. The outputs of the examination are data objects found in the collected information. These outputs may include system and user-generated files. The analysis aims to draw conclusions based on the evidence found.
 5. **Reporting** – Reports are based on proven techniques and methodology and other competent forensic examiners should be able to duplicate and reproduce the same results.
 From [Blue Team Level One](https://elearning.securityblue.team/home/certifications/blue-team-level-1#content#digital-forensics#introduction-to-digital-forensics#digital-forensics-process)
+
+## Analysis
+
+Order of Volatility 
+    Processes, Registers & Cache
+    Memory
+        Network Processes
+    Disk (HDD and SSD)
+    Remote Logging and Monitoring Data
+    Physical Configuration, Network Topology, Archival Media
+
+### 1 – **Registers & Cache**
+
+
+### 2 – **Memory**
+
+
+### 3 – **Disk (HDD and SSD)**
+
+#### Files Systems
+Metadata and File Carving
+
+Windows - Properties
+Linux Tool - `exiftool`
+    `scalpel`
+
+#### Browser Data
+
+
+
+### 4 – **Remote Logging and Monitoring Data**
+
+
+### 5 – **Physical Configuration, Network Topology, Archival Media**
