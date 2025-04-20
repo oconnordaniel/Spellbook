@@ -34,7 +34,28 @@ Linux Tool - `exiftool`
 
 #### Browser Data
 
+- **Cookies**
+- **Favorites**
+- **Downloaded Files**
+- **URLs Visited**
+- **Searches**
+- **Cached Webpage**
+- **Cached Images**
 
+Tools:
+- **KAPE –** [Download](https://www.kroll.com/en/insights/publications/cyber/kroll-artifact-parser-extractor-kape)
+- **Browser History Viewer –** [Download](https://www.foxtonforensics.com/browser-history-viewer/) (Choose the 100% free version)
+- **Browser History Capturer –** [Download](https://www.foxtonforensics.com/browser-history-capturer/)
+
+Kape: 
+Select Target Source (C: or D: or whatever the forensic image is)
+Destination: Wherever we're storing our notes
+Targets:
+- Edge - Browsers - Edge
+- Firefox - Browsers - Firefox
+- Chrome - Browsers - Chrome
+
+`KAPE Browser Forensics\C\Users\<user>\AppData\Local\Google\Chrome\User Data`
 
 ### 4 – **Remote Logging and Monitoring Data**
 
