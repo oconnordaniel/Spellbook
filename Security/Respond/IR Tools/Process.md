@@ -76,3 +76,5 @@ Targets:
 
 
 ### 5 – **Physical Configuration, Network Topology, Archival Media**
+
+C:\Users\Rick.Sanchez\Pictures\2021\Personal\kali-linu
