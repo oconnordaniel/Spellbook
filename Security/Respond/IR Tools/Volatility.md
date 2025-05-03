@@ -1,5 +1,5 @@
 
-# Volatility
+# Volatility 2
 
 ## Install
 
@@ -25,11 +25,25 @@ Windows [Commands](https://github.com/volatilityfoundation/volatility/wiki/Comma
 
 Useful plugins
 
-- pslist
-- pstree
-- psscan (can show more then just pslist)
-- psxview (more info)
+- `pslist`
+- `pstree`
+- `psscan` (can show more then just pslist)
+- `psxview` (more info)
+- `cmdline -p <process_id>` (show command line arguments)
 
-- netscan (show all network connections)
-- iehistory (show all browser history)
-- filescan (show all files in the scan)
+- `netscan` (show all network connections)
+- `iehistory` (show all browser history)
+- `filescan` (show all files in the scan)
+
+- `dumpfiles --dump-dir=<directory>` (dump files to a directory)
+
+# Volitility 3
+
+No need to specify profile directly. User profile as part of the scan command. i.e.
+
+```
+python3 vol.py -f file.dmp windows.pstree
+python3 vol.py -f file.dmp windows.svcscan
+```
+
+[Full Plugin List](https://volatility3.readthedocs.io/en/latest/volatility3.plugins.html)
