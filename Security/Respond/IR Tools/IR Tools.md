@@ -24,13 +24,20 @@ Redline is an incident response tool developed and freely distributed by FireEye
 
 Velociraptor is an advanced endpoint-monitoring, forensics, and response platform. It is open-source but very powerful. TryHackMe has created a [Velociraptor room](https://tryhackme.com/room/velociraptorhp) for you to learn more about it.
 
+## DeepBlue CLI
+
+Takes in exported .evtx log files, or can be run on a live system to analyze the local log files.
+
+`./DeepBlue.ps1 ./Log1.evtx` to analyze a log file. 
+`./DeepBlue.ps1 -log <group>` to analyze logs on a live system, passing in groups like `system` or `security`.
+
 ## Some VBA tools
 
-- oleid 
-    - decalage.info/oletools
+- oleid
+- decalage.info/oletools
 - mraptor
-    - decalage.info/python/oletools
+- decalage.info/python/oletools
 - olevba
-    - decalage.info/python/oletools
+- decalage.info/python/oletools
 
 <github.com/decalage2/oletools/>
