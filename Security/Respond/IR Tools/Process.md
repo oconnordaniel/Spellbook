@@ -78,3 +78,16 @@ Targets:
 ### 5 – **Physical Configuration, Network Topology, Archival Media**
 
 C:\Users\Rick.Sanchez\Pictures\2021\Personal\kali-linu
+
+## Useful Commands
+
+`Get-NetIPConfiguration` and `Get-NetIPAddress`
+`tasklist`
+`wmic process get description, executablepath`
+`Get-LocalUser`
+`Get-LocalUser -Name <account_name> | select `
+`Get-Service | Where Status -eq "Running" | Out-GridView`
+`Get-Process | Format-Table -View priority`
+`Get-Process -Id 'idhere' | Select `
+`Get-ScheduledTask`
+`Get-ScheduledTask -TaskName 'PutANameHere' | Select `
