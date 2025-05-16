@@ -95,3 +95,93 @@ False Positive
 Alert - The single output of detection
 
 Ticket - A item in the ticket system to be worked by an human.
+
+---
+
+Collection
+	Original Point of need. Who said this is an alert we should be looking to detect this? 
+		Red team, analysts, client, intel team, Threat Hunters, DFIR, etc.
+		
+Research
+	Identify the logs required to detect this attack.
+	
+Validation
+	Write various detection logic
+		Single instance
+		Threshold
+		Correlation ? 
+	Back testing 
+	Identify expected volume
+	Identify Possible Exceptions
+	
+Verification
+	Make sure the detection fires. 
+	Make the detection in prod but tag/flag it as dev so not ready for analysts. 
+	Trigger via scripts like atomic red team or Threat Emulation
+	
+Release
+	Prep for release. 
+	Peer review
+	Volume
+	Impact - Mittre Att&ck
+	Response Plan
+	Documentation
+	
+Maintain
+	Tuning out False Positives
+
+Measure
+
+Data -> Enrich -> Enrich -> Alert -> Investigation -> Remediate
+
+What is malicious ?
+	Activities that were not authorized (by US law or Company policy) that inpares the Confidentiality  Integrity or  Availability  
+
+## Core Dispositions:
+	
+True Positives  (malicious)
+False Positive (needs tuning)
+True Negative (normal behavior)
+False Negative (malicious)
+
+True Positives  (malicious)
+	"This is why we do what we do"
+	This starts an response of some form.
+	- Mitigated
+	- Remediated
+	- Authorized
+False Positive (needs tuning)
+	Normal or Authorized activity that was flagged on anyways. Opportunity for tuning. 
+	Lots of FPs are from Admins doing admin things, this is normal. Or devs being devs.
+True Negative (normal behavior)
+	"No news is good news" "Unless something is broken"
+False Negative (malicious)
+	The absolute worst thing.
+	Bad is happened and we missed it. 
+	Try to keep down FPs, but FNs are worst the FPs.
+	
+TP - Benign
+	DON'T DO THIS! 
+
+### Sub-catagories.
+
+Was it red team or black hat?
+Was it a user being done? Does anything need to be done? 
+Was action taken?
+Consider RBA (risk based alerts)
+	
+- Benign
+- Mitigated
+- Remediated
+- Authorized
+
+### Measure
+
+Look for high volume
+Look for no volume
+True/False Positive Ration
+Detection Coverage
+Overall health
+
+Consider focusing on the "Left" of the Mirtre Att&ck as that catches things sooner. 
+Left is also more likely to hit FPs
