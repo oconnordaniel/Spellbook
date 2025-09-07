@@ -1,0 +1,22 @@
+
+# How to enrich logs in gray log
+
+
+Inputs
+Extractors
+
+Setup Lookup Table
+  Create Data Adapter
+  Create Cache
+  Confiugre the Lookup Table
+
+Stream Rules
+
+Pipelines
+  Manage Rules
+  Create Pipeline
+    Attach Pipeline to Stream
+    Use any nmber of stages to manipulate the data by applying rules as it flows though the Pipeline.
+
+Write to Index
+
