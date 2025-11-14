@@ -6,7 +6,7 @@
 3. Traces - A history of requests though multiple apps/services to detect performance bottlenecks
 4. Alarms
 
-![[Screenshot 2023-10-25 at 16.35.06.png]]
+![[Cloud/AWS/Services/CloudWatch/Screenshot 2023-10-25 at 16.35.06.png]]
 
 ## Main tools
 
