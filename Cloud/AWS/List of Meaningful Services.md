@@ -42,6 +42,7 @@ AWS Cloudformation
 - **IAM**
 
 - SNS - Simple Notification Service
+- SQS - Simple Queue Service
 
 - Amazon CloudWatch
 
