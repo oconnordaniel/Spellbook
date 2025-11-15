@@ -2,16 +2,16 @@
 
 ## High Level
 
-S3
-VPC
-EC2
-IAM
+- S3
+- VPC
+- EC2
+- IAM
 
 ## Extras
 
-AWS CLI
-AWS SDK
-AWS Cloudformation
+- AWS CLI
+- AWS SDK
+- AWS Cloudformation
 
 ## List
 
