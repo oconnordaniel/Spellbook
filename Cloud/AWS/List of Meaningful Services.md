@@ -44,6 +44,7 @@
 
 - SNS - Simple Notification Service
 - SQS - Simple Queue Service
+- MQTT - Fancier Queues
 
 - Amazon CloudWatch
 
