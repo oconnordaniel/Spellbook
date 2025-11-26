@@ -40,13 +40,22 @@
 - Elastic Transcoder
 - AWS MediaConvert
 
+- Lambda - Serverless Functions
+- Step Function
+
+- Beanstalk - PaaS (maybe bad an unmaintained?)
+- Kinesis - Massive real-time data processing
+- ElastiCache - Managed in-memory database
+- MemoryDB - Like EalstiCache, but with built in persistance
+- CloudTrail - Audit logs for all actions
+- [[Cloud/AWS/Services/CloudWatch/Cloudwatch|Cloudwatch]]
+- Athena - SQL like... thing... 
+
 - **IAM**
 
 - SNS - Simple Notification Service
 - SQS - Simple Queue Service
 - MQTT - Fancier Queues
-
-- Amazon CloudWatch
 
 - Amplify
 - AppFlow - For connecting external apps together
@@ -54,3 +63,7 @@
 - Batch - Basically cron in the cloud
 - Migration Hub - For migrating to AWS
 - Device Farm - Physical phones and stuff in a data center
+
+---
+
+TODO: Review some of the data processing services to see what the main differences are.
