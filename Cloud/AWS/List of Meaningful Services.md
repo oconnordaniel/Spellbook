@@ -57,6 +57,19 @@
 - SQS - Simple Queue Service
 - MQTT - Fancier Queues
 
+- ML... stuff...
+- CodeGuru - Code review
+- Comprehend - Text analysis
+- Kendra - More... text analysis. Answer suggestion based on docs
+- Forecast - Time-series (based on uploaded data)
+- Fraud Detector 
+- Lex - Chatbot
+- Persnalize
+- Polly
+- Rekognition
+- Textract
+- Translate
+
 - Amplify
 - AppFlow - For connecting external apps together
 - AppSync
