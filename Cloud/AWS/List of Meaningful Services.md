@@ -50,6 +50,7 @@
 - CloudTrail - Audit logs for all actions
 - [[Cloud/AWS/Services/CloudWatch/Cloudwatch|Cloudwatch]]
 - Athena - SQL like... thing... 
+- Glue - More... data analytics? 
 
 - **IAM**
 
@@ -64,11 +65,14 @@
 - Forecast - Time-series (based on uploaded data)
 - Fraud Detector 
 - Lex - Chatbot
-- Persnalize
-- Polly
-- Rekognition
-- Textract
-- Translate
+- Personalize - Personalized recommendations (mostly for sales?)
+- Polly - Text to Speach
+- Rekognition - Image and video recognition
+- Textract - OCR
+- Translate - Language Translation (human language, not code)
+
+- Data Exchange - Pre-downloaded datasets
+
 
 - Amplify
 - AppFlow - For connecting external apps together
