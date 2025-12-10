@@ -40,6 +40,7 @@
 - Elastic Transcoder
 - AWS MediaConvert
 - RDS - Managed Relational data base
+- Aurora - Mangaed managed data base
 
 - Lambda - Serverless Functions
 - Step Function
