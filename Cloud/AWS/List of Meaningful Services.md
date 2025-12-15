@@ -40,7 +40,11 @@
 - Elastic Transcoder
 - AWS MediaConvert
 - RDS - Managed Relational data base
-- Aurora - Mangaed managed data base
+- Aurora - Managed managed data base
+- DocumentDB - Managed Docuement DB (like MongoDB)
+- DynomoDB - Managed NoSQL DB
+- Neptune - Managed Graph DB
+- Keyspaces - Managed Apache Cassandra
 
 - Lambda - Serverless Functions
 - Step Function
