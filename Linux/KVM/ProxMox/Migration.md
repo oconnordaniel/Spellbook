@@ -11,4 +11,4 @@ May need  `pct shutdown 101`
 
 https://pve.proxmox.com/pve-docs/qm.1.html
 `qm disk move <vmid> <disk> [<storage>] [OPTIONS]`
-i.e. `qm move_disk 100 scsi0 Pool`
+i.e. `qm move_disk 100 scsi0 Poo`

@@ -12,6 +12,8 @@
 - AWS CLI
 - AWS SDK
 - AWS Cloudformation
+    - Amazon Q - AI assisted development
+    - Amazon Codewhisper - AI assisted code generation
 
 ## List
 
@@ -20,6 +22,7 @@
 - Route 53
 - Global Accelerator
 - CLoudFront
+- AWS Firewall Manager - Centralized firewall management
 
 - **S3**
 - Elastic Block Storage
@@ -45,6 +48,21 @@
 - DynomoDB - Managed NoSQL DB
 - Neptune - Managed Graph DB
 - Keyspaces - Managed Apache Cassandra
+- Athena - SQL like... thing...
+- Glue - More... data analytics?
+
+
+- ECR - Elastic Container Registry
+- ECS - Elastic Container Service
+- EKS - Elastic Kubernetes Service
+
+- KMS - Key Management Service
+- Aws Secrets Manager - Secret storage
+- AWS Cert Manager (ACM) - SSL and Certificate Managment
+- Audit Manager - Compliance auditing
+- AWS Security Hub - Security posture management
+- AWS Inspector - Automated security assessment / Hardening
+- Amazon Detective - Security investigation
 
 - Lambda - Serverless Functions
 - Step Function
@@ -54,12 +72,13 @@
 - Kinesis - Massive real-time data processing
 - ElastiCache - Managed in-memory database
 - MemoryDB - Like EalstiCache, but with built in persistance
-- CloudTrail - Audit logs for all actions
-- [[Cloud/AWS/Services/CloudWatch/Cloudwatch|Cloudwatch]]
-- Athena - SQL like... thing...
-- Glue - More... data analytics?
+- CloudTrail - Audit logs for all actions - [[Cloud/AWS/Services/CloudWatch/Cloudwatch|Cloudwatch]]
+ 
 
 - **IAM**
+
+- Amazon Cognito - User sign-up, sign-in, and access control
+- AWS Directory Service - Managed Microsoft AD
 
 - SNS - Simple Notification Service
 - SQS - Simple Queue Service
@@ -73,7 +92,10 @@
 - Fraud Detector
 - Lex - Chatbot
 - Personalize - Personalized recommendations (mostly for sales?)
-- Polly - Text to Speach
+- Athena - SQL like... thing...
+- Glue - More... data analytics?
+
+ Polly - Text to Speach
 - Rekognition - Image and video recognition
 - Textract - OCR
 - Translate - Language Translation (human language, not code)
